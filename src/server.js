@@ -1,5 +1,4 @@
 // Importa as bibliotecas necessárias
-require("dotenv").config(); // Carrega as variáveis de ambiente do arquivo .env
 const express = require("express");
 const connectDB = require("./config/database");
 
@@ -7,7 +6,7 @@ const connectDB = require("./config/database");
 const app = express();
 
 // Define a porta do servidor
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 // Middleware para processar JSON
 app.use(express.json());
